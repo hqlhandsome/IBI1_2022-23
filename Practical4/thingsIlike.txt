@@ -1,10 +1,10 @@
-I like 1
-I like 2
-I like 3
-I like 4
-I like 5
-I like 6
-I like 7
-I like 8
-I like 9
-I like 10
+I like running
+I like playing basketball
+I like swimming
+I like eating
+I like sleeping
+I like jogging
+I like github
+I like math
+I like watching TV
+I like drinking tea

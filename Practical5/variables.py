@@ -16,3 +16,9 @@ elif e < d:
   print ("Los Angeles is further")
 else:
   print ("Same")
+
+X=True
+Y=False
+W=X and Y
+Z=X or Y
+print (W,Z)

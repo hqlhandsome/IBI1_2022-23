@@ -8,12 +8,11 @@
 a=-3.19
 b=-118.24
 c=116.39
-d=|a-b|
-e=|a-c|
+d=abs(a-b)
+e=abs(a-c)
 if d < e:
   print ("Haining is further")
 elif e < d:
   print ("Los Angeles is further")
 else:
   print ("Same")
- 

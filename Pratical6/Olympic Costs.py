@@ -2,7 +2,7 @@
 costs = {'Los Angeles 1984': 1, 'Seoul 1988': 8, 'Barcelona 1992': 15, 'Atlanta 1996': 7, 'Sydney 2000': 5, 'Athens 2003': 14, 'Beijing 2008': 43, 'London 2012': 40}
 import matplotlib.pyplot as plt
 
-# Sort the dictionary by value and create a list of tuples
+# Sort the dictionary by value and create a list
 sorted_costs = sorted(costs.items(), key=lambda x: x[1])
 
 # Print the sorted costs list

@@ -1,0 +1,2 @@
+Question: How have new cases and total cases developed over time in the UK?
+It starts from the line 140

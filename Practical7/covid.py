@@ -108,6 +108,8 @@ new_cases20200331 = new_data["new_cases"]
 #Creating a new variable new_cases20200331 to store the data for the new_cases column.
 plt.boxplot(new_cases20200331)
 #Creating a box plot for the new_cases data using Matplotlib's boxplot() function.
+plt.title("new cases on 31 March 2020")
+#Title the plot
 plt.show()
 #Show the box plot.
 
@@ -117,6 +119,8 @@ new_deaths20200331 = new_data["new_deaths"]
 #Creating a new variable new_deaths20200331 to store the data for the new_deaths column.
 plt.boxplot(new_deaths20200331)
 #Creating a box plot for the new_deaths data using Matplotlib's boxplot() function.
+plt.title("new deaths on 31 March 2020")
+#Title the plot
 plt.show()
 #Show the box plot.
 world_dates=covid_data['date']
@@ -133,9 +137,10 @@ plt.plot(world_dates, world_new_deaths, 'r+')
 #plot a line graph with red plus markers for the x-values in 'world_dates' and y-values in 'world_new_deaths'.
 plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=-90,fontsize=4)
 #set the x-axis tick labels to occur at every fourth data point, with the labels being rotated -90 degrees and with a font size of 4.
+plt.title("new cases and new deaths worldwide over time")
+#Title the plot
 plt.show()
 #show the final plot
-
 
 #How have new cases and total cases developed over time in the UK?
 covid_data['UK'] = (covid_data['location'] == 'United Kingdom')
@@ -151,10 +156,12 @@ UK_total_cases=data_UK['total_cases']
 plt.plot(UK_dates, UK_new_cases, 'b+')
 # plot a line graph with blue plus markers for the x-values in 'UK_dates' and y-values in 'UK_new_cases'.
 plt.xticks(UK_dates.iloc[0:len(UK_dates):1],rotation=-90,fontsize=4)
-# set the x-axis tick labels to occur at every data point, with the labels being rotated -90 degrees and with a font size of 4.
+# set the x-axis tick labels to occur at every fourth data point, with the labels being rotated -90 degrees and with a font size of 4.
 plt.plot(UK_dates, UK_total_cases, 'r+')
 # plot a line graph with red plus markers for the x-values in 'UK_dates' and y-values in 'UK_total_cases'.
 plt.xticks(UK_dates.iloc[0:len(UK_dates):1],rotation=-90,fontsize=4)
-# set the x-axis tick labels to occur at every data point, with the labels being rotated -90 degrees and with a font size of 4.
+# set the x-axis tick labels to occur at every fourth data point, with the labels being rotated -90 degrees and with a font size of 4.
+plt.title("new cases and new deaths in the UK over time")
+#Title the plot
 plt.show()
 # Show the final plot

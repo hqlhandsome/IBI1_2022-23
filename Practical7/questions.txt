@@ -1,2 +1,4 @@
 Question: How have new cases and total cases developed over time in the UK?
-It starts from the line 140
+It starts from the line 149
+The total case was increasing over time in the UK.
+The new case was first increasing and then became stable level of about 2600 per day.

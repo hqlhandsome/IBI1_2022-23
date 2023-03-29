@@ -150,11 +150,11 @@ UK_total_cases=data_UK['total_cases']
 #This creates a new variable named UK_total_cases, which contains the "total_cases" column from the data_UK
 plt.plot(UK_dates, UK_new_cases, 'b+')
 # plot a line graph with blue plus markers for the x-values in 'UK_dates' and y-values in 'UK_new_cases'.
-plt.xticks(UK_dates.iloc[0:len(UK_dates):4],rotation=-90,fontsize=4)
-# set the x-axis tick labels to occur at every fourth data point, with the labels being rotated -90 degrees and with a font size of 4.
+plt.xticks(UK_dates.iloc[0:len(UK_dates):1],rotation=-90,fontsize=4)
+# set the x-axis tick labels to occur at every data point, with the labels being rotated -90 degrees and with a font size of 4.
 plt.plot(UK_dates, UK_total_cases, 'r+')
 # plot a line graph with red plus markers for the x-values in 'UK_dates' and y-values in 'UK_total_cases'.
-plt.xticks(UK_dates.iloc[0:len(UK_dates):4],rotation=-90,fontsize=4)
-# set the x-axis tick labels to occur at every fourth data point, with the labels being rotated -90 degrees and with a font size of 4.
+plt.xticks(UK_dates.iloc[0:len(UK_dates):1],rotation=-90,fontsize=4)
+# set the x-axis tick labels to occur at every data point, with the labels being rotated -90 degrees and with a font size of 4.
 plt.show()
 # Show the final plot

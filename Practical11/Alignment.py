@@ -46,7 +46,9 @@ def extract(filename):
 human_seq = extract(human)
 mouse_seq = extract(mouse)
 cat_seq = extract(cat)
-
+print('The human seq is',human_seq)
+print('The mouse seq is',mouse_seq)
+print('The cat seq is',cat_seq)
 # Initialize a variable to store the edit distance between human and mouse
 edit_distance1 = 0
 # Loop through each position in the human and mouse sequences
@@ -93,10 +95,11 @@ def BLOSUM_score(seq1, seq2):
 
 # Calculate and print the BLOSUM scores between each pair of sequences
 score1 = BLOSUM_score(mouse_seq, human_seq)
-score2 = BLOSUM_score(mouse_seq, cat_seq)
-score3 = BLOSUM_score(human_seq, cat_seq)
+score2 = BLOSUM_score(human_seq, cat_seq)
+score3 = BLOSUM_score(mouse_seq, cat_seq)
 
 print('\n')
 print('The score between mouse and human is:', score1)
-print('The score between mouse and cat is:', score2)
-print('The score between cat and human is:', score3)
+print('The score between human and cat is:', score2)
+print('The score between cat and mouse is:', score3)
+

@@ -4,4 +4,4 @@ The similarity between mouse and cat is 81.74%
 The score between mouse and human is: 3579
 The score between mouse and cat is: 3592
 The score between cat and human is: 3717
-The result shows that the genes between human and cat closely related, that means we can 
+From this data, we can infer that human and cat may be evolutionarily closer than human and mouse because it gets the highest score and it showes the most similarity. To determine this, we need more evidence and further research.

@@ -41,3 +41,6 @@ dna = "ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCacTGACTA"
 result = is_protein_coding(dna)
   # Print the result in a formatted way
 print(f"The DNA sequence {dna} has {result[0]}% of coding region and is {result[1]}.")
+dna = input('DNA=')
+result = is_protein_coding(dna)
+print(f"The DNA sequence {dna} has {result[0]}% of coding region and is {result[1]}.")

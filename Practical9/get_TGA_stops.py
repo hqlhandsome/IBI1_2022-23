@@ -20,15 +20,17 @@ with open(input_file, "r") as input_handle, open(output_file, "w") as output_han
                 # This line writes the gene name and the sequence to the output file in fasta format.
                 # The f-string allows us to insert variables inside curly braces. The "\n" represents a newline character.
 
-        gene_name = line.split()[0][1:]
-        # This line assigns the gene name to the variable.
-        # It splits the line by whitespace and takes the first element, which is the header.
-        # Then it slices off the first character, which is ">", and keeps the rest.
+            gene_name = line.split()[0][1:]
+            # This line assigns the gene name to the variable.
+            # It splits the line by whitespace and takes the first element, which is the header.
+            # Then it slices off the first character, which is ">", and keeps the rest.
             sequence = ""
             # This line assigns the gene name to the variable.
             # It splits the line by whitespace and takes the first element, which is the header.
             # Then it slices off the first character, which is ">", and keeps the rest.
-    else:
-    # This else clause executes if the current line does not start with ">", which means it is a sequence line.
-        sequence += line.strip()
-        # This line adds the current line to the sequence variable after stripping off any whitespace characters from both ends.
+        else:
+        # This else clause executes if the current line does not start with ">", which means it is a sequence line.
+            sequence += line.strip()
+            # This line adds the current line to the sequence variable after stripping off any whitespace characters from both ends.# This line adds the current line to the sequence variable after stripping off any whitespace characters from both ends
+    if sequence.endswith("TGA"): # Check if the last sequence ends with the stop codon
+        output_handle.write(f">{gene_name}\n{sequence}\n")

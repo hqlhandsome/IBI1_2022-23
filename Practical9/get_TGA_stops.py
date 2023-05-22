@@ -28,7 +28,7 @@ with open(input_file, "r") as input_handle, open(output_file, "w") as output_han
             # This line assigns the gene name to the variable.
             # It splits the line by whitespace and takes the first element, which is the header.
             # Then it slices off the first character, which is ">", and keeps the rest.
-        else:
-        # This else clause executes if the current line does not start with ">", which means it is a sequence line.
-            sequence += line.strip()
-            # This line adds the current line to the sequence variable after stripping off any whitespace characters from both ends.
+    else:
+    # This else clause executes if the current line does not start with ">", which means it is a sequence line.
+        sequence += line.strip()
+        # This line adds the current line to the sequence variable after stripping off any whitespace characters from both ends.
